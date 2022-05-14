@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration</title>
+<style>
+.content
+{
+text-align:center;
+padding:10px;
+}
+ul, li
+{
+display:inline-block;
+padding:20px;
+font-size:30px;
+}
+</style>
+</head>
+<body>
+<div class="content">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="register.html">Register User</a></li>
+<li><a href="update.html">Update User</a></li>
+<li><a href="delete.html">Delete User</a></li>
+<li><a href="login.html">Login</a></li>
+</ul>
+<h1>Register User</h1>
+<form action="http://localhost:8082/Login_and_Registration/register">
+<input type="text" name="roll" placeholder="Enter your roll no" required><br/><br/>
+<input type="password" name="password" placeholder="Enter your password" required><br/><br/>
+<input type="text" name="myname" placeholder="Enter your name" required><br/><br/>
+<input type="text" name="mobile" placeholder="Enter your mobile no" required><br/><br/>
+<textarea name="add" placeholder="Enter your address" required></textarea><br/><br/>
+Select class: <select name="class" required>
+<option>FE</option>
+<option>SE</option>
+<option>TE</option>
+<option>BE</option>
+</select><br/><br/>
+<input type="submit" value="Register">
+</form><br/>
+Already have account? <a href="login.html">Login Here</a>
+</div>
+</body>
+</html>
